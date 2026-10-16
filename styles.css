@@ -1,0 +1,342 @@
+/*Global border box sizing*/
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+/*Background accessibility options*/
+:root {
+--bg-color: #ffffff;
+--text-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--bg-color: #1a1a1a;
+--text-color:#ffffff; 
+}
+
+}
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+}
+/*Font family declaration*/
+body {
+font-family: isometra, Arial, Helvetica, sans-serif;
+background-color: rgb(95, 65, 24);
+color: #d8ccc0;
+}
+/*figure section*/
+figure {
+    position: relative;
+}
+/*footer section*/
+.footer {
+text-align: center;
+}
+/*form section*/
+form {
+position: relative;
+z-index: 1;
+}
+/*Font section*/
+h1 {
+font-size: 36px;
+font-weight: 700;
+line-height: 1.2;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+
+h2 {
+font-size: 28px;
+font-weight: 600;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+
+h3 {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+
+p {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+
+/*Navigation section*/
+.nav-primary {
+display: flex;
+justify-content: center;
+flex-direction: row;
+gap:20px;
+}
+.nav-btt {
+display: flex;
+justify-content: center;
+flex-direction: row;
+margin: 20px;
+color: #8442f6;
+}
+
+a {
+text-decoration-line: none; 
+}
+
+a:link {
+color: #8442f6;
+}
+
+a:visited {
+color: #eeb676;
+}
+
+a:hover {
+color: #eeb676;
+}
+
+a:focus {
+color: #004499;
+outline: 2px solid #004499;
+}
+
+a:active {
+color: #bdb602;
+}
+
+/*Yoga studio logo section*/
+.yoga-logo {
+width: 600px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+z-index: 1;
+}
+/*Audio player section*/
+.audio {
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0.5;
+position: relative;
+z-index: 2;
+}
+/* UL section*/
+ul {
+display: table;
+margin: 0 auto;
+text-align: left;
+position: relative;
+z-index: 2;
+}
+/* OL section*/
+ol {
+display: table;
+margin: 0 auto;
+text-align: left;
+position: relative;
+z-index: 2;
+}
+/*Lotus crane pose png*/
+.lc-pose {
+display: block;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+z-index: 2;
+}
+
+.decor-box{
+display: none;
+}
+
+.decor-box-2{
+display: none;
+}
+
+.decor-box-3{
+display: none;
+}
+
+@media (min-width: 768px) {
+.decor-box {
+display: flex;
+}
+.decor-box-2 {
+display: flex;
+}
+.decor-box-3 {
+display: flex;
+}
+
+.decor-box-s {
+display: flex;
+}
+}
+
+/*About page*/
+figure {
+position: relative;
+}
+figcaption {
+text-align: center;
+}
+
+/*yoga-instructor-png*/
+.yoga-instructor {
+display: block;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+z-index: 2;
+}
+
+/*yoga-studio-png*/
+.yoga-studio {
+display: block;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+z-index: 2;
+}
+
+/*decoration boxes*/
+.decor-box {
+width: 400px;
+height: 800px;
+display: block;
+background-color: black;
+border: 3px black;
+border-radius: 15px;
+position: absolute;
+top: 500px;
+left: 1000px;
+z-index: 1;
+}
+
+.decor-box-2 {
+width: 800px;
+height: 400px;
+display: block;
+background-color: black;
+border: 3px black;
+border-radius: 15px;
+position: absolute;
+top: 1600px;
+left: 150px;
+z-index: 1;
+}
+
+.decor-box-3 {
+width: 800px;
+height: 400px;
+display: block;
+background-color: black;
+border: 3px black;
+border-radius: 15px;
+position: absolute;
+top: 300px;
+left: 100px;
+z-index: 1;
+}
+
+/*events page*/
+
+/*yoga-workshop-png*/
+.yoga-workshop {
+display: block;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+z-index: 2;
+}
+/*form section*/
+.form-p {
+text-align: left;
+}
+
+.fieldset {
+background-color: black;
+max-width: 500px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+box-sizing: borderbox;
+}
+
+/*textera section*/
+.textera {
+display: block;
+max-width: 500px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+box-sizing: border-box;
+}
+
+/*textera comments label*/
+.label {
+display: block;
+text-align: center;
+}
+
+/*submit button*/
+.submit {
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 12px 24px;
+font-size: 16px;
+min-height: 44px;
+min-width: 44px;
+}
+
+/*services page*/
+
+/*fieldset*/
+.fieldset-2 {
+max-width: 500px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+box-sizing: borderbox;
+z-index: 2;
+position: relative;
+}
+
+.decor-box-s {
+width: 400px;
+height: 525px;
+display: block;
+background-color: black;
+border: 3px black;
+border-radius: 15px;
+position: absolute;
+top: 500px;
+left: 1000px;
+z-index: 1;
+}
+
+/*ul section*/
+.ul {
+list-style-position: inside;
+text-align: center;
+z-index: 2;
+}
