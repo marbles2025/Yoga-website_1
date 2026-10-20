@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script src="script.js"></script>
+<script src="script.js" defer></script>
     </head>
     <body>
         <h1>Monthly workshops</h1>
@@ -47,12 +47,9 @@
             <form>
             <fieldset class="fieldset">
                 <legend>Please enter details here</legend>
-   <form action="contact" method="post"
-                <input type="text" id="full_name" name="full_name" required>
-                <label>
-                         Full Name
-                         <input type="text" name="Name">
-                </label>
+   <form action="contact" method="post">
+               <label for="full_name">Full name</label>
+               <input type="text" id="full_name" name="full_name" required>
                 <br>
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email_address" required>
@@ -64,17 +61,17 @@
                     <legend>Class interest</legend>
                 <p class="form-p">Select all that apply</p>
                 <label>
-                    <input type="checkbox" name="Class interests" value="gentle class">
+                    <input type="checkbox" class="preferance" name="Class interests" value="gentle class">
                     Gentle class
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="Class interests" value="vinyasa class">
+                    <input type="checkbox" class="preferance" name="Class interests" value="vinyasa class">
                     Vinyasa class
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" name="Class interests" value="restorative">
+                    <input type="checkbox" class="preferance" name="Class interests" value="restorative">
                     Restorative class
                 </label>
                 </fieldset>
@@ -82,17 +79,17 @@
                     <legend>Experience level</legend>
                 <p class="form-p"> Let us know how much yoga experience you have.</p>
                 <label>
-                    <input type="radio" name="experience" value="Beginner">
+                    <input type="radio" class= "experience" name="experience" value="Beginner">
                     Beginner
                 </label>
                 <br>
                 <label>
-                    <input type="radio" name="experience" value="intermediate">
+                    <input type="radio" class= "experience" name="experience" value="intermediate">
                     Intermediate
                 </label>
                 <br>
                 <label>
-                    <input type="radio" name="experience" value="Advanced">
+                    <input type="radio" class= "experience" name="experience" value="Advanced">
                     Advanced
                 </label>
                 </fieldset>
@@ -100,24 +97,24 @@
                     <legend>How can we contact you?</legend>
                 <p class="form-p"> Preferred method of contact</p>
                 <label>
-                    <input type="radio" name="level" value="email">
+                    <input type="radio" name="contactMethod" value="email">
                     Email
                 </label>
                 <br>
                 <label>
-                    <input type="radio" name="level" value="phone">
+                    <input type="radio" name="contactMethod" value="phone">
                     Phone
                 </label>
                 <br>
                 <label>
-                    <input type="radio" name="level" value="text">
+                    <input type="radio" name="contactMethod" value="text">
                     Text
                 </label>
                 </fieldset>
                 <label class="label" for="comments">Comments</label>
                 <textarea class="textera" id="comments" name="comments" rows="4" cols="40" minlength="10" maxlength="500
                 pattern=[A-Z]{2}[0-9]{4}" title="Enter 2 uppercase letters followed by 4 digits (e.g., AB1234)" required">Enter any addition comments here.</textarea>
-                <input class="submit" type="submit"></button>
+                <input class="submit" type="submit">
              </form>
         </main>
         <footer>
